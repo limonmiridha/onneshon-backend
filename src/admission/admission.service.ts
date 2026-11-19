@@ -15,12 +15,23 @@ export class AdmissionsService {
 
     async create(dto: CreateAdmissionDto) {
         const trackingId = `ONN-${Math.floor(1000 + Math.random() * 9000)}`;
+
+        // ১৫ ডিসেম্বর, ২০২৬ রাত ১১:৫৯ পর্যন্ত অটোমেটিক আর্লি বার্ড অফার প্রযোজ্য হবে
+        const earlyBirdDeadline = new Date('2026-12-15T23:59:59+06:00');
+        const isEarlyBirdActive = new Date() <= earlyBirdDeadline;
+
+        const appliedOfferCode =
+            dto.offerCode?.trim() || (isEarlyBirdActive ? 'early-bird-dec15' : undefined);
+
         const created = await this.admissionModel.create({
             ...dto,
+            offerCode: appliedOfferCode,
             trackingId,
         });
+
         return created;
     }
+
 
     // হোম পেজের লাইভ স্ট্যাটাস সেকশনের জন্য
     async getPublicStats() {

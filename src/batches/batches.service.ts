@@ -16,8 +16,8 @@ export class BatchesService implements OnModuleInit {
                     title: 'জুনিয়র ফাউন্ডেশন ও মেধা বিকাশ ব্যাচ',
                     category: 'academic',
                     targetGroup: 'ষষ্ঠ — অষ্টম শ্রেণি',
-                    totalSeats: 20,
-                    filledSeats: 14,
+                    totalSeats: 25,
+                    filledSeats: 0,
                     schedule: 'সপ্তাহে ৪ দিন (বিকাল ৩:৩০ – ৫:০০)',
                 },
                 {
@@ -26,7 +26,7 @@ export class BatchesService implements OnModuleInit {
                     category: 'academic',
                     targetGroup: 'নবম — দশম শ্রেণি',
                     totalSeats: 18,
-                    filledSeats: 15,
+                    filledSeats: 0,
                     schedule: 'সপ্তাহে ৫ দিন (বিকাল ৪:০০ – ৬:০০)',
                 },
                 {
@@ -35,7 +35,7 @@ export class BatchesService implements OnModuleInit {
                     category: 'skill',
                     targetGroup: 'একাদশ — দ্বাদশ শ্রেণি',
                     totalSeats: 15,
-                    filledSeats: 11,
+                    filledSeats: 0,
                     schedule: 'সপ্তাহে ৩ দিন (সকাল বা বিকাল ব্যাচ)',
                 },
                 {
@@ -44,7 +44,7 @@ export class BatchesService implements OnModuleInit {
                     category: 'skill',
                     targetGroup: 'যেকোনো শ্রেণির আগ্রহী শিক্ষার্থী',
                     totalSeats: 15,
-                    filledSeats: 9,
+                    filledSeats: 0,
                     schedule: 'প্রতি শুক্রবার (সকাল ৯:৩০ – ১১:৩০)',
                 },
             ]);
