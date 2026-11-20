@@ -13,7 +13,7 @@ export class BatchesService implements OnModuleInit {
             await this.batchModel.insertMany([
                 {
                     slug: 'junior-foundation',
-                    title: 'জুনিয়র ফাউন্ডেশন ও মেধা বিকাশ ব্যাচ',
+                    title: 'জুনিয়র ফাউন্ডেশন',
                     category: 'academic',
                     targetGroup: 'ষষ্ঠ — অষ্টম শ্রেণি',
                     totalSeats: 25,
