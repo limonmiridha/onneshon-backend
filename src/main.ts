@@ -7,6 +7,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
+      'https://onneshon-banaripara.vercel.app',
       process.env.FRONTEND_URL || '*',
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
